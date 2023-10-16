@@ -1,3 +1,7 @@
+'''
+Implementation of Magic Methods
+'''
+
 class Point:
     def __init__(self, x, y):
         self.x = x
@@ -23,6 +27,7 @@ class Point:
 
     def __eq__(self, other):
         return self.x == other.x and self.y == other.y
+
 
 if __name__ == '__main__':
     point_1 = Point(1, 2)
