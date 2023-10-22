@@ -16,6 +16,7 @@ if __name__ == '__main__':
     print(hash(45))
 
     hashable_obj = HashableObjects(45)
+    hashable_obj.__print__()
 
     # the following code snippet throws an error because list is not hashable
     # dict = {

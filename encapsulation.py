@@ -4,6 +4,8 @@ Simple implementation of Encapsulation
 
 
 class BankAccount:
+    _balance = None
+
     def __init__(self, balance):
         super(BankAccount, self).__init__()
         # private attribute
@@ -31,5 +33,4 @@ if __name__ == '__main__':
     customer_1.withdraw(600)
 
     current_balance = customer_1.get_balance()
-
     print(f'Current balance is {current_balance}')
