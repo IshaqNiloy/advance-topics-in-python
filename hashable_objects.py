@@ -14,6 +14,7 @@ if __name__ == '__main__':
     print(hash(45))
     print(hash('Hello!'))
     print(hash(45))
+    print(hash((1, 2, 3)))
 
     hashable_obj = HashableObjects(45)
     hashable_obj.__print__()
