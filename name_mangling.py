@@ -1,6 +1,6 @@
-class BankAccount:
+class _BankAccount:  # protected class
     def __init__(self, balance):
-        super(BankAccount, self).__init__()
+        super(_BankAccount, self).__init__()
         self.__balance = balance  # name mangling / This is how you define private attribute in python
 
     def _deposit(self, amount):  # protected method / The same thing can be applied to class as well
@@ -26,8 +26,8 @@ class BankAccount:
 
 
 if '__main__' == __name__:
-    customer1 = BankAccount(500)
-    customer2 = BankAccount(200)
+    customer1 = _BankAccount(500)
+    customer2 = _BankAccount(200)
 
     current_balance = customer1._deposit(500)
     customer1._print()
